@@ -1,11 +1,11 @@
-# revision 23544
+# revision 24709
 # category Package
 # catalog-ctan /macros/latex/contrib/ydoc
-# catalog-date 2011-03-21 08:49:58 +0100
+# catalog-date 2011-11-19 21:39:40 +0100
 # catalog-license lppl1.3
-# catalog-version 0.5alpha
+# catalog-version 0.6alpha
 Name:		texlive-ydoc
-Version:	0.5alpha
+Version:	0.6alpha
 Release:	1
 Summary:	Macros for documentation of LaTeX classes and packages
 Group:		Publishing
@@ -18,8 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package provides macros and environments to document LaTeX
@@ -32,23 +30,25 @@ the implementation might change. Nevertheless, the author uses
 it to document his own packages.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/generic/ydoc/ydocincl.tex
+%{_texmfdistdir}/tex/generic/ydoc/ydocstrip.tex
 %{_texmfdistdir}/tex/latex/ydoc/ydoc-code.sty
 %{_texmfdistdir}/tex/latex/ydoc/ydoc-desc.sty
 %{_texmfdistdir}/tex/latex/ydoc/ydoc-doc.sty
@@ -56,7 +56,6 @@ it to document his own packages.
 %{_texmfdistdir}/tex/latex/ydoc/ydoc.cfg
 %{_texmfdistdir}/tex/latex/ydoc/ydoc.cls
 %{_texmfdistdir}/tex/latex/ydoc/ydoc.sty
-%{_texmfdistdir}/tex/latex/ydoc/ydocstrip.tex
 %doc %{_texmfdistdir}/doc/latex/ydoc/README
 %doc %{_texmfdistdir}/doc/latex/ydoc/ydoc.pdf
 #- source
