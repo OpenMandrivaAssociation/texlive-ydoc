@@ -29,16 +29,8 @@ should probably not (yet) be used with other packages, since
 the implementation might change. Nevertheless, the author uses
 it to document his own packages.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -60,7 +52,6 @@ it to document his own packages.
 %doc %{_texmfdistdir}/doc/latex/ydoc/ydoc.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/ydoc/ydoc.dtx
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,5 +62,3 @@ it to document his own packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
