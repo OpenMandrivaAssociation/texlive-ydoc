@@ -1,12 +1,12 @@
-# revision 24709
+# revision 26202
 # category Package
 # catalog-ctan /macros/latex/contrib/ydoc
-# catalog-date 2011-11-19 21:39:40 +0100
+# catalog-date 2012-02-24 11:32:36 +0100
 # catalog-license lppl1.3
 # catalog-version 0.6alpha
 Name:		texlive-ydoc
 Version:	0.6alpha
-Release:	2
+Release:	3
 Summary:	Macros for documentation of LaTeX classes and packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ydoc
