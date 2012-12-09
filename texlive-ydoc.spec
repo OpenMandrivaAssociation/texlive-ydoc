@@ -1,12 +1,12 @@
-# revision 26202
+# revision 24709
 # category Package
 # catalog-ctan /macros/latex/contrib/ydoc
-# catalog-date 2012-02-24 11:32:36 +0100
+# catalog-date 2011-11-19 21:39:40 +0100
 # catalog-license lppl1.3
 # catalog-version 0.6alpha
 Name:		texlive-ydoc
 Version:	0.6alpha
-Release:	3
+Release:	2
 Summary:	Macros for documentation of LaTeX classes and packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ydoc
@@ -62,3 +62,20 @@ it to document his own packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6alpha-2
++ Revision: 757742
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.6alpha-1
++ Revision: 739946
+- texlive-ydoc
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.5alpha-1
++ Revision: 719963
+- texlive-ydoc
+- texlive-ydoc
+- texlive-ydoc
+
