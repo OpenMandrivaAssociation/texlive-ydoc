@@ -6,7 +6,7 @@
 # catalog-version 0.6alpha
 Name:		texlive-ydoc
 Version:	0.6alpha
-Release:	3
+Release:	4
 Summary:	Macros for documentation of LaTeX classes and packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ydoc
