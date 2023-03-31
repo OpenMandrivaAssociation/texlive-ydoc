@@ -1,6 +1,6 @@
 Name:		texlive-ydoc
 Version:	64887
-Release:	1
+Release:	2
 Summary:	Macros for documentation of LaTeX classes and packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ydoc
