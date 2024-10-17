@@ -3,7 +3,7 @@ Version:	64887
 Release:	2
 Summary:	Macros for documentation of LaTeX classes and packages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ydoc
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ydoc
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ydoc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ydoc.doc.r%{version}.tar.xz
